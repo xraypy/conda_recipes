@@ -1,0 +1,19 @@
+package:
+  name: termcolor
+  version: "1.1"
+
+# build:
+  number: 0
+  script: pip install termcolor
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+about:
+  home: http://pypi.python.org/pypi/termcolor
+  license: GNU General Public License (GPL)
+  summary: 'ANSI Color formatting for output in terminal.'
