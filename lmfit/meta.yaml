@@ -1,0 +1,41 @@
+{% set version = "0.9.6" %}
+
+package:
+  name: lmfit
+  version: {{ version }}
+
+source:
+  git_rev: {{ version }}
+  git_url: https://github.com/lmfit/lmfit-py
+
+
+# build:
+  number: 0
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - scipy
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - six
+
+test:
+  # Python imports
+  imports:
+    - lmfit
+
+
+about:
+  home: http://lmfit.github.io/lmfit-py/
+  license: BSD
+  summary: >
+      Non-Linear Least Squares Minimization, with flexible Parameter
+      settings, based on scipy.optimize.leastsq, and with many additional
+      classes and methods for curve fitting http:/lmfit.github.io/lmfit-py/
