@@ -39,7 +39,3 @@ about:
       Non-Linear Least Squares Minimization, with flexible Parameter
       settings, based on scipy.optimize.leastsq, and with many additional
       classes and methods for curve fitting http:/lmfit.github.io/lmfit-py/
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

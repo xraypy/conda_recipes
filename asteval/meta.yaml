@@ -31,7 +31,3 @@ about:
   home: http://github.com/newville/asteval
   license: BSD License
   summary: 'Safe, minimalistic evaluator of python expression using ast module'
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml
