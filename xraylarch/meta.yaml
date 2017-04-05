@@ -21,7 +21,7 @@ requirements:
     - h5py
     - requests
     - termcolor
-    - fontconfig
+    - fontconfig # [osx or linux64]
     - pango # [linux64]
     - pcre
     - yaml
@@ -44,7 +44,7 @@ requirements:
     - sqlalchemy
     - h5py
     - termcolor
-    - fontconfig
+    - fontconfig # [osx or linux64]
     - pango # [linux64]
     - pcre
     - yaml
