@@ -26,7 +26,8 @@ requirements:
     - pcre
     - yaml
     - pillow
-    - wxpython
+    - wxpython # [py27]
+    - wxpython-phoenix # [py36]
     - wxmplot
     - wxutils
     - pyepics
@@ -50,7 +51,8 @@ requirements:
     - yaml
     - pillow
     - requests
-    - wxpython
+    - wxpython # [py27]
+    - wxpython-phoenix # [py36]
     - wxmplot
     - wxutils
     - termcolor

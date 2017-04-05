@@ -17,7 +17,8 @@ requirements:
     - numpy
     - scipy
     - matplotlib
-    - wxpython
+    - wxpython # [py27]
+    - wxpython-phoenix # [py36]
 
   run:
     - python
@@ -26,7 +27,8 @@ requirements:
     - numpy
     - scipy
     - matplotlib
-    - wxpython
+    - wxpython # [py27]
+    - wxpython-phoenix # [py36]
 
 test:
   imports:
