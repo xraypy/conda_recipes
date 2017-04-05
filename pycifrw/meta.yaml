@@ -1,0 +1,26 @@
+{% set version = "4.2" %}
+
+package:
+  name: pycifrw
+  version: {{ version }}
+
+
+source:
+  url: https://bitbucket.org/jamesrhester/pycifrw/downloads/PyCifRW-4.2.tar.gz
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - ply
+    - numpy
+
+  run:
+    - python
+    - ply
+    - numpy
+
+about:
+  home: https://bitbucket.org/jamesrhester/pycifrw
+  license: Python 2.0 license
+  summary: 'Reading and writing Crystallographic Information Format files'
