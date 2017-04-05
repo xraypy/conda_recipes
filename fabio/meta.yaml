@@ -1,0 +1,23 @@
+{% set version = "0.4.0" %}
+
+package:
+  name: fabio
+  version: {{ version }}
+
+source:
+   url: https://github.com/silx-kit/fabio/archive/v0.4.0.tar.gz
+
+requirements:
+  build:
+    - python
+    - numpy
+    - cython
+    - lxml
+
+  run:
+    - python
+
+about:
+  home: https://github.com/silx-kit/fabio
+  license: MIT
+  summary: 'I/O library for images produced by 2D X-ray detector'
