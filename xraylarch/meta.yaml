@@ -33,6 +33,7 @@ requirements:
     - pyepics
     - lmfit
     - fabio
+    - pycifrw # [py27]
 
   run:
     - python
@@ -59,6 +60,7 @@ requirements:
     - pyepics
     - lmfit
     - fabio
+    - pycifrw # [py27]
 
 test:
   imports:
