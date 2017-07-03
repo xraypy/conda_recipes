@@ -33,8 +33,9 @@ requirements:
     - pyepics
     - lmfit
     - asteval
-    - fabio # [osx or linux64]
-    - pycifrw # [osx or linux64]
+    - fabio
+    - pycifrw
+    - pyfai # [osx or linux64 or win64]
 
   run:
     - python
@@ -61,9 +62,10 @@ requirements:
     - pyepics
     - lmfit
     - asteval
-    - fabio # [osx or linux64]
-    - pycifrw # [osx or linux64]
-
+    - fabio
+    - pycifrw
+    - pyfai # [osx or linux64 or win64]
+    
 test:
   imports:
     - larch
