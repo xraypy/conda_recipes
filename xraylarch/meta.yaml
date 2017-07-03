@@ -1,4 +1,4 @@
-{% set version = "0.9.33" %}
+{% set version = "0.9.34" %}
 
 package:
   name: xraylarch
@@ -32,7 +32,7 @@ requirements:
     - wxutils
     - pyepics
     - lmfit
-    - fabio
+    - fabio # [osx or linux64]
 
   run:
     - python
@@ -58,7 +58,7 @@ requirements:
     - termcolor
     - pyepics
     - lmfit
-    - fabio
+    - fabio # [osx or linux64]
 
 test:
   imports:
