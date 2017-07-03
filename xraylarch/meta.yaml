@@ -32,7 +32,9 @@ requirements:
     - wxutils
     - pyepics
     - lmfit
+    - asteval
     - fabio # [osx or linux64]
+    - pycifrw # [osx or linux64]
 
   run:
     - python
@@ -58,7 +60,9 @@ requirements:
     - termcolor
     - pyepics
     - lmfit
+    - asteval
     - fabio # [osx or linux64]
+    - pycifrw # [osx or linux64]
 
 test:
   imports:
