@@ -1,4 +1,4 @@
-{% set version = "3.2.6" %}
+{% set version = "3.2.7" %}
 
 package:
   name: pyepics
@@ -8,10 +8,17 @@ source:
    git_rev: {{ version }}
    git_url: https://github.com/pyepics/pyepics.git
 
+build:
+  # string: py27_0
+  number: 0
+  script: python setup.py install
+
 requirements:
   build:
     - python
     - setuptools
+    - numpy
+    - readline
 
   run:
     - python
