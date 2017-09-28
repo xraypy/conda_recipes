@@ -9,6 +9,9 @@ build:
    number: 1
    script: pip install -U fabio # [win or osx or linux]
    binary_relocation: True
+   string: py36_1 # [py36]
+   string: py35_1 # [py35]
+   string: py27_1 # [py27]
 
 requirements:
   build:
