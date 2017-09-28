@@ -1,11 +1,14 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: fabio
   version: {{ version }}
 
-source:
-   url: https://github.com/silx-kit/fabio/archive/v0.4.0.tar.gz
+
+build:
+   number: 1
+   script: pip install -U fabio # [win or osx or linux]
+   binary_relocation: True
 
 requirements:
   build:
