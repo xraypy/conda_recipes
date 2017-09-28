@@ -1,0 +1,40 @@
+package:
+   name: wxpython
+   version: 4.0.0b2
+
+build:
+   number: 1
+   script: pip install -U wxPython # [win or osx]
+   script: $RECIPE_DIR/build.sh # [linux]
+   binary_relocation: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+    - requests
+    - six >=0.10.0
+    - libxml2 # [osx or linux]
+    - libiconv # [linux]
+    - libgcc >=5.1 # [linux]
+    - pango >=1.40 # [linux]
+
+  run:
+    - python
+    - six
+    - requests
+    - six >=0.10.0
+    - libxml2 # [osx or linux]
+    - libiconv # [linux]
+    - libgcc >=5.1 # [linux]
+    - pango >=1.40 # [linux]
+
+test:
+    imports:
+        - wx
+
+about:
+  home: http://www.wxpython.org/
+  license: wxWindows License
+  summary: 'Python wrapper around the wxWidgets Cross platform Graphical User Interface library'
