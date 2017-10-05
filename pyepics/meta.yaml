@@ -15,14 +15,14 @@ requirements:
     - setuptools
     - numpy
     - pyparsing
-    - readline
+    - readline  # [osx or linux64]
 
   run:
     - python
     - setuptools
     - numpy
     - pyparsing
-    - readline
+    - readline  # [osx or linux64]
 
 test:
   # Python imports
