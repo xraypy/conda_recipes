@@ -12,6 +12,7 @@ requirements:
   build:
     - python
     - setuptools
+    - pip
     - six
     - nose
     - numpy
@@ -37,6 +38,7 @@ requirements:
   run:
     - python
     - setuptools
+    - pip
     - six
     - nose
     - numpy
