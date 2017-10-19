@@ -25,8 +25,10 @@ requirements:
     - fontconfig # [osx or linux64]
     - pango # [linux64]
     - pcre
+    - pywin32 # [win64 or win32]
     - yaml
     - pillow
+    - scikit-image
     - wxpython
     - wxmplot
     - wxutils
@@ -46,13 +48,15 @@ requirements:
     - matplotlib
     - sqlalchemy
     - h5py
+    - requests
     - termcolor
     - fontconfig # [osx or linux64]
     - pango # [linux64]
     - pcre
+    - pywin32 # [win64 or win32]
     - yaml
     - pillow
-    - requests
+    - scikit-image
     - wxpython
     - wxmplot
     - wxutils
