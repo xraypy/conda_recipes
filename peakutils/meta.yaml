@@ -1,0 +1,33 @@
+package:
+  name: peakutils
+  version: 1.1.0
+
+build:
+  number: 0
+  script: pip install -U peakutils
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+    - requests
+    - six >=0.10.0
+    - numpy >=1.8
+    - scipy >=0.14
+    - matplotlib >=2.0
+
+  run:
+    - python
+    - numpy >=1.8
+    - scipy >=0.14
+    - matplotlib >=2.0
+
+test:
+  imports:
+    - peakutils
+
+about:
+  home: https://bitbucket.org/lucashnegri/peakutils
+  license: MIT
+  summary: 'Peak detection utilities for 1D data'
