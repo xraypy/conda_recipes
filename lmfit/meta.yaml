@@ -1,4 +1,4 @@
-{% set version = "0.9.7" %}
+{% set version = "0.9.9" %}
 
 package:
   name: lmfit
@@ -19,6 +19,7 @@ requirements:
     - numpy
     - scipy
     - six
+    - asteval>=0.9.12
 
   run:
     - python
@@ -26,12 +27,12 @@ requirements:
     - numpy
     - scipy
     - six
+    - asteval>=0.9.12
 
 test:
   # Python imports
   imports:
     - lmfit
-
 
 about:
   home: http://lmfit.github.io/lmfit-py/
