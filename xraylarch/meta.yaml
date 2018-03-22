@@ -1,4 +1,4 @@
-{% set version = "0.9.35" %}
+{% set version = "0.9.36" %}
 
 package:
   name: xraylarch
@@ -33,9 +33,12 @@ requirements:
     - wxmplot
     - wxutils
     - pyepics
+    - peakutils
     - lmfit
     - asteval
     - pycifrw
+    - psycopg2
+    - psutil
 
   run:
     - python
@@ -61,10 +64,13 @@ requirements:
     - wxmplot
     - wxutils
     - termcolor
+    - peakutils
     - pyepics
     - lmfit
     - asteval
     - pycifrw
+    - psycopg2
+    - psutil
 
 test:
   imports:
