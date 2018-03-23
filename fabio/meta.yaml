@@ -1,17 +1,21 @@
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: fabio
   version: {{ version }}
 
 
+source:
+  git_rev: v0.6.0
+  git_url: https://github.com/silx-kit/fabio
+  
+
 build:
-   number: 1
-   script: pip install -U fabio # [win or osx or linux]
+   number: 0
+   script: python setup.py install # [win or osx or linux]
    binary_relocation: True
-   string: py36_1 # [py36]
-   string: py35_1 # [py35]
-   string: py27_1 # [py27]
+   string: py36_0 # [py36]
+   string: py27_0 # [py27]
 
 requirements:
   build:
