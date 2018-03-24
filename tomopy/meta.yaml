@@ -1,9 +1,11 @@
+{% set version = "1.1.2" %}
 package:
   name: tomopy
-  version: '1.1.2'
+  version: {{ version }}
 
 source:
-  git_url: https://github.com/tomopy/tomopy.git
+  url: https://github.com/tomopy/tomopy/archive/{{ version }}.tar.gz
+
 
   
 build:
@@ -11,9 +13,12 @@ build:
 
 requirements:
   build:
-    - mkl-devel
     - python
     - setuptools
+    - mkl
+    - mkl-devel
+    - mkl-include
+    - mkl_fft
 
   run:
     - python
@@ -24,6 +29,8 @@ requirements:
     - scikit-image
     - pywavelets
     - mkl
+    - mkl-devel
+    - mkl-include
     - mkl_fft
     - dxchange
     - numexpr
