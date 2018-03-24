@@ -12,13 +12,12 @@ requirements:
   build:
     - python
     - setuptools
-    - wxpython # [py27]
-    - wxpython-phoenix # [py36]
+    - wxpython=4.0.1
 
   run:
     - python
-    - wxpython # [py27]
-    - wxpython-phoenix # [py36]
+    - setuptools
+    - wxpython=4.0.1
 
 test:
   imports:
