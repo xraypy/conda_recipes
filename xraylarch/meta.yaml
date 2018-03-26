@@ -1,12 +1,12 @@
 {% set version = "0.9.36" %}
+{% set name = "xraylarch" %}
 
 package:
-  name: xraylarch
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  git_rev: {{ version }}
-  git_url:  https://github.com/xraypy/xraylarch.git
+   url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
 
 requirements:
   build:
