@@ -15,6 +15,7 @@ requirements:
     - pip
     - six
     - nose
+    - pytest
     - numpy
     - scipy
     - matplotlib
@@ -39,6 +40,9 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
+    - fabio # [osx or linux64]
+    - pyFAI # [osx or linux64]
+    - tomopy # [osx or linux64]
 
   run:
     - python
@@ -46,6 +50,7 @@ requirements:
     - pip
     - six
     - nose
+    - pytest
     - numpy
     - scipy
     - matplotlib
@@ -71,6 +76,9 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
+    - fabio # [osx or linux64]
+    - pyFAI # [osx or linux64]
+    - tomopy # [osx or linux64]
 
 test:
   imports:
