@@ -1,0 +1,29 @@
+
+package:
+    name: uncertainties
+    version: 3.0.2
+source:
+    sha256: 91db922d54dff6094b4ea0d6e058f713a992cdf42e3ebaf73278e1893bfa2942
+    url: https://pypi.io/packages/source/u/uncertainties/uncertainties-3.0.2.tar.gz
+build:
+    script: python -m pip install --no-deps --ignore-installed .
+requirements:
+    build:
+        - pip
+        - python
+        - setuptools 
+    
+    run:
+        - python
+        - numpy
+test:
+    imports:
+        - uncertainties
+        - uncertainties.unumpy
+    requires:
+        - numpy
+about:
+    home: https://pypi.python.org/pypi/uncertainties
+    license: BSD 3-Clause
+    summary: Transparent calculations with uncertainties on the quantities involved
+        (aka "error propagation"); fast calculation of derivatives.
