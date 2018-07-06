@@ -1,4 +1,4 @@
-{% set version = "0.9.37" %}
+{% set version = "0.9.38" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -7,6 +7,7 @@ package:
 
 source:
    url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
+   sha256: 7e73b1a01b81d923f1b554d1cca5892b5117d16df11bbc5cc0bc91258d391997
 
 requirements:
   build:
@@ -30,6 +31,7 @@ requirements:
     - yaml
     - pillow
     - scikit-image
+    - scikit-learn
     - wxpython
     - wxmplot
     - wxutils
@@ -65,6 +67,7 @@ requirements:
     - yaml
     - pillow
     - scikit-image
+    - scikit-learn
     - wxpython
     - wxmplot
     - wxutils
