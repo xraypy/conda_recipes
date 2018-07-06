@@ -29,6 +29,7 @@ requirements:
     - pcre
     - pywin32 # [win64 or win32]
     - yaml
+    - pyyaml
     - pillow
     - scikit-image
     - scikit-learn
@@ -65,6 +66,7 @@ requirements:
     - pcre
     - pywin32 # [win64 or win32]
     - yaml
+    - pyyaml
     - pillow
     - scikit-image
     - scikit-learn
