@@ -17,7 +17,7 @@ requirements:
     - numpy
     - scipy
     - matplotlib
-    - wxpython
+    - wxpython=4.0.1
 
   run:
     - python
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - scipy
     - matplotlib
-    - wxpython
+    - wxpython=4.0.1
 
 test:
   imports:
