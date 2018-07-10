@@ -1,4 +1,4 @@
-{% set version = "0.9.38" %}
+{% set version = "0.9.39" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
    url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
-   sha256: 13ce0111d4524b5bf286aaa5c36645ee4941947054583fc75c94934fb29202b8
+   sha256: c31cc7cc0fee114dfed00ba1c4c43b6aec96afaacea4dae542b7a09fc2507f03
 
 build:
   number: 0
