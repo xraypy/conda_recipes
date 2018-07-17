@@ -1,4 +1,4 @@
-{% set version = "0.9.39" %}
+{% set version = "0.9.40" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
    url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
-   sha256: c31cc7cc0fee114dfed00ba1c4c43b6aec96afaacea4dae542b7a09fc2507f03
+   sha256: 075fcdbe4f3c024a09dd5633a5b678fc514983c3619ff1faf86736534db90492
 
 build:
   number: 0
@@ -47,6 +47,7 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
+    - silx # [py36]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
     - tomopy # [osx or linux64]
@@ -85,6 +86,7 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
+    - silx # [py36]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
     - tomopy # [osx or linux64]
