@@ -47,7 +47,7 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
-    - silx # [py36]
+    - silx # [py36] [osx or linux64]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
     - tomopy # [osx or linux64]
@@ -86,7 +86,7 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
-    - silx # [py36]
+    - silx # [py36] [osx or linux64]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
     - tomopy # [osx or linux64]
