@@ -2,8 +2,6 @@
 
 osname=`uname -s`
 
-echo "IN build.sh :: "  $osname
-
 # for Darwin, we do no try to compile extension
 if [[ "$osname" == 'Darwin' ]] ; then
     $PYTHON setup_nocompile.py install
