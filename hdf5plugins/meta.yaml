@@ -1,0 +1,34 @@
+package:
+    name: hdf5filters
+    version: '0.1'
+
+source:
+    git_rev: master
+    git_url: https://github.com/nexusformat/HDF5-External-Filter-Plugins
+
+build:
+    number: '0'
+
+requirements:
+    build:
+        - python
+        - setuptools
+        - MinGW # [win]
+        - Make # [win]
+        - hdf5 1.10.1
+        - cmake >=3.0
+        - lz4
+        - zlib
+
+    run:
+        - python
+        - setuptools
+        - hdf5 1.10.1
+        - lz4
+        - zlib
+
+
+about:
+    home: https://github.com/nexusformat/HDF5-External-Filter-Plugins
+    license: various open source variants for different filters
+    summary: filter plugins for lz4, bitshuffle, and bzip2 compression methods for HDF5
