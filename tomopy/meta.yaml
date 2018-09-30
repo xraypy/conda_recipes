@@ -25,6 +25,9 @@ requirements:
     - mkl-devel
     - mkl-include
     - mkl_fft
+    - MinGW # [win]
+    - Make # [win]
+
 
   run:
     - python
@@ -41,6 +44,7 @@ requirements:
     - dxchange
     - numexpr
     - futures # [py2k]
+    - MinGW # [win]
 
 test:
   # Python imports
