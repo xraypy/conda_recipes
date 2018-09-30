@@ -20,6 +20,7 @@ requirements:
         - cmake >=3.0
         - lz4
         - zlib
+        - bzip2
 
     run:
         - python
@@ -27,9 +28,10 @@ requirements:
         - hdf5 1.10.1.*
         - lz4
         - zlib
+        - bzip2
 
 
 about:
     home: https://github.com/nexusformat/HDF5-External-Filter-Plugins
-    license: various open source variants for different filters
+    license: BSD
     summary: filter plugins for lz4, bitshuffle, and bzip2 compression methods for HDF5
