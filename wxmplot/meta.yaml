@@ -1,4 +1,4 @@
-{% set version = "0.9.30" %}
+{% set version = "0.9.31" %}
 
 package:
   name: wxmplot
@@ -15,7 +15,6 @@ requirements:
     - nose
     - six
     - numpy
-    - scipy
     - matplotlib
     - wxpython
 
@@ -24,7 +23,6 @@ requirements:
     - nose
     - six
     - numpy
-    - scipy
     - matplotlib
     - wxpython
 
