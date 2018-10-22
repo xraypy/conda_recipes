@@ -1,0 +1,36 @@
+{% set version = "1.2" %}
+
+package:
+  name: pyshortcuts
+  version: {{ version }}
+
+source:
+  url: https://github.com/newville/pyshortcuts//archive//{{ version }}.tar.gz
+  sha256: 8335d131ce3576628193c927981d21a0047da26a6be4522748890205b69832f9
+
+build:
+  number: 0
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+    - pywin32 # [win32 or win64]
+
+
+  run:
+    - python
+    - setuptools
+    - six
+    - pywin32 # [win32 or win64]
+
+test:
+  imports:
+    - pyshortcuts
+
+about:
+  home: http://github.com/newville/pyshortcuts
+  license: BSD
+  summary: 'create desktop shortcuts for python scripts'
