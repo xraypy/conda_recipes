@@ -1,19 +1,25 @@
-{% set version = "1.1.4" %}
+{% set version = "1.2.1" %}
 package:
   name: tomopy
   version: {{ version }}
 
 source:
-  git_rev:  master
-  git_url: https://github.com/newville/tomopy
+  git_rev: master
+  git_url: https://github.com/tomopy/tomopy.git
 
 build:
   number: 0
+  script:
+    - "{{ PYTHON }} build.py"
+    - "{{ PYTHON }} setup.py install"
 
 requirements:
   build:
+    - MinGW # [win]
+    - Make # [win]
     - python
     - setuptools
+    - pip
     - numpy
     - scipy
     - six
@@ -25,9 +31,6 @@ requirements:
     - mkl-devel
     - mkl-include
     - mkl_fft
-    - MinGW # [win]
-    - Make # [win]
-
 
   run:
     - python
@@ -48,30 +51,22 @@ requirements:
 
 test:
   # Python imports
+  requires:
+    - nose
   imports:
     - tomopy
     - tomopy.misc
-    - tomopy.misc.corr
-    - tomopy.misc.morph
-    - tomopy.misc.phantom
     - tomopy.prep
-    - tomopy.prep.alignment
-    - tomopy.prep.normalize
-    - tomopy.prep.phase
-    - tomopy.prep.stripe
     - tomopy.recon
-    - tomopy.recon.algorithm
-    - tomopy.recon.rotation
+    - tomopy.sim
     - tomopy.util
-    - tomopy.util.dtype
-    - tomopy.util.extern
-    - tomopy.util.mproc
+  source_files:
+    - test/*
+  commands:
+    - nosetests test
+
 
 about:
-  home: http://tomopy.readthedocs.org
+  home: http://tomopy.readthedocs.io
   license: BSD-3
   summary: 'Tomographic reconstruction in Python.'
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml
