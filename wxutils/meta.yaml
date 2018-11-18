@@ -13,12 +13,14 @@ requirements:
     - python
     - setuptools
     - wxpython>=4
+    - python.app # [osx]
     - pywin32 # [win64 or win32]
 
   run:
     - python
     - setuptools
     - wxpython>=4
+    - python.app # [osx]
     - pywin32 # [win64 or win32]
 
 test:
