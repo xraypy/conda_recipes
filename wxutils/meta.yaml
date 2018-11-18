@@ -1,23 +1,25 @@
-{% set version = "0.2" %}
+{% set version = "0.2.2" %}
 
 package:
   name: wxutils
   version: {{ version }}
 
 source:
-  git_rev: {{ version }}
-  git_url: https://github.com/newville/wxutils.git
+  url: https://github.com/newville/wxutils//archive//{{ version }}.tar.gz
+  sha256: dd116c630c89f4167888a202a1785d14a2b500961b36cd7e982fda5b829d0d97
 
 requirements:
   build:
     - python
     - setuptools
     - wxpython>=4
+    - pywin32 # [win64 or win32]
 
   run:
     - python
     - setuptools
     - wxpython>=4
+    - pywin32 # [win64 or win32]
 
 test:
   imports:
@@ -25,5 +27,5 @@ test:
 
 about:
   home: http://newville.github.io/wxutils/
-  license: MIT
-  summary: 'A library of utilites for wxPython'
+  license: BSD
+  summary: A library of utilites for wxPython
