@@ -1,4 +1,4 @@
-{% set version = "0.9.11" %}
+{% set version = "0.9.12" %}
 
 package:
   name: lmfit
