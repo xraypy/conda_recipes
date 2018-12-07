@@ -1,0 +1,33 @@
+{% set version = "4.0.0" %}
+package:
+  name: pypubsub
+  version: {{ version }}
+
+source:
+  git_rev: v4.0.0
+  git_url: https://github.com/schollii/pypubsub
+
+
+build:
+  number: 0
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+    - requests
+    - six >=0.10.0
+
+  run:
+    - python
+
+test:
+  imports:
+    - pubsub
+
+about:
+  home: https://github.com/schollii/pypubsub
+  license: BSD
+  summary: 'A Python publish-subcribe library'
