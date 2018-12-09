@@ -8,18 +8,22 @@ source:
   url: https://github.com/newville/wxutils//archive//{{ version }}.tar.gz
   sha256: dd116c630c89f4167888a202a1785d14a2b500961b36cd7e982fda5b829d0d97
 
+build:
+  number: 1
+  script: python setup.py install
+
 requirements:
   build:
     - python
     - setuptools
-    - wxpython>=4
+    - wxpython>=4.0.3
     - python.app # [osx]
     - pywin32 # [win64 or win32]
 
   run:
     - python
     - setuptools
-    - wxpython>=4
+    - wxpython>=4.0.3
     - python.app # [osx]
     - pywin32 # [win64 or win32]
 
