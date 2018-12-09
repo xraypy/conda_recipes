@@ -1,4 +1,4 @@
-{% set version = "0.9.40" %}
+{% set version = "0.9.41rc1" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -6,8 +6,11 @@ package:
   version: {{ version }}
 
 source:
-   url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
-   sha256: 075fcdbe4f3c024a09dd5633a5b678fc514983c3619ff1faf86736534db90492
+   git_rev: {{ version }}
+   git_url: https://github.com/xraypy/xraylarch.git
+
+###   url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
+###   sha256: e3652b494e20c55d42520bcb09bf1a3c47a13d832b8c82d80eb954f3eac99468
 
 build:
   number: 0
@@ -18,39 +21,42 @@ requirements:
     - python
     - setuptools
     - pip
-    - six
+    - six>=1.10
     - nose
     - pytest
-    - numpy
-    - scipy
-    - matplotlib
-    - sqlalchemy
-    - h5py
+    - numpy>=1.15
+    - scipy>=1.0
+    - matplotlib>=3.0
+    - sqlalchemy>=1.2
+    - h5py>=2.7
     - requests
-    - termcolor
+    - termcolor>=1.1.0
     - fontconfig # [osx or linux64]
     - pango # [linux64]
     - pcre
     - pywin32 # [win64 or win32]
     - yaml
-    - pyyaml
-    - pillow
+    - pyyaml>=3.12
+    - pillow>=5.2
     - scikit-image
     - scikit-learn
-    - wxpython
-    - wxmplot
+    - wxpython>=4.0.3
     - wxutils
     - pyepics
     - peakutils
+    - wxmplot
     - lmfit
     - asteval
+    - uncertainties
     - pycifrw
     - psycopg2
-    - psutil
-    - silx # [py36] [osx or linux64]
+    - psutil>=5.4.7
+    - tomopy
+    # - silx # [py36] [osx or linux64]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
-    - tomopy # [osx or linux64]
+    - pyshortcuts
+    - pypubsub
 
   run:
     - python
@@ -59,7 +65,7 @@ requirements:
     - six
     - nose
     - pytest
-    - numpy
+    - numpy>=0.15
     - scipy
     - matplotlib
     - sqlalchemy
@@ -86,10 +92,13 @@ requirements:
     - pycifrw
     - psycopg2
     - psutil
+    - tomopy [py36]
     - silx # [py36] [osx or linux64]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
-    - tomopy # [osx or linux64]
+    - pyshortcuts
+    - pypubsub
+
 
 test:
   imports:
