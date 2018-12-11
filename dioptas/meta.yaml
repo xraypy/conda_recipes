@@ -1,0 +1,58 @@
+
+package:
+    name: dioptas
+    version: 0.4.1
+source:
+    git_rev: develop
+    git_url: https://github.com/Dioptas/Dioptas
+
+build:
+    number: 1
+    script: python setup.py install
+
+requirements:
+    build:
+        - python
+        - setuptools
+        - numpy
+        - scipy
+        - pyqt
+        - pyqtgraph
+        - libgfortran
+        - lmfit
+        - fabio
+        - pyfai
+        - pycifrw
+        - future
+        - scikit-image
+        - qtpy
+
+    run:
+        - python
+        - setuptools
+        - numpy
+        - scipy
+        - pyqt
+        - pyqtgraph
+        - lmfit
+        - fabio
+        - pyfai
+        - pycifrw
+        - future
+        - scikit-image
+        - qtpy
+
+test:
+    imports:
+        - dioptas
+app:
+    entry: dioptas
+    summary: Dioptas
+    type: desk
+about:
+    home: https://github.com/Dioptas/Dioptas
+    license: GPL3 license
+    summary: GUI program for reduction and exploration of 2D X-ray diffraction data
+extra:
+    copy_test_source_files: true
+    final: true
