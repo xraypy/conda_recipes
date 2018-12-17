@@ -1,0 +1,59 @@
+package:
+    name: silx
+    version: 0.9.0
+
+source:
+    git_rev: master
+    git_url: https://github.com/newville/silx.git
+
+build:
+    number: '0'
+    script: python setup.py install
+
+requirements:
+    build:
+        - python
+        - setuptools
+        - pip
+        - numpy
+        - matplotlib
+        - cython
+        - ipython
+        - qtconsole
+        - pyopengl
+        - fabio
+        - h5py
+        - libgfortran
+        - mako
+
+    run:
+        - python
+        - setuptools
+        - pip
+        - numpy
+        - matplotlib
+        - cython
+        - ipython
+        - qtconsole
+        - pyopengl
+        - fabio
+        - h5py
+        - mako
+
+test:
+    imports:
+        - silx
+        - silx.test
+about:
+    description: 'The silx project aims at providing a collection of Python packages
+        to support the development of data assessment, reduction and analysis
+        applications at synchrotron radiation facilities. It aims at providing
+        reading/writing different file formats, data reduction routines and a set
+        of Qt widgets to browse and visualize data.'
+    home: https://github.com/silx-kit/silx
+    license: MIT
+    license_family: MIT
+    license_file: copyright
+    summary: The silx project aims at providing a collection of Python packages to
+        support the development of data assessment, reduction and analysis applications
+        at synchrotron radiation facilities.
