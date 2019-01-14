@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: wxutils
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/newville/wxutils//archive//{{ version }}.tar.gz
-  sha256: dd116c630c89f4167888a202a1785d14a2b500961b36cd7e982fda5b829d0d97
+  sha256: a242bc5a9fea1dd0d0a5c8bb14bb8cf9f29b83096964f1e793ba623a8e31492a
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install
 
 requirements:
