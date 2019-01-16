@@ -13,7 +13,7 @@ conda build $PACKAGE
 cp $ROOT/conda-bld/$PLAT/$PACKAGE* dist/$PLAT/.
 
 
-conda convert --platform all $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
+conda convert -f --platform all $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
 
 
 echo "# Now do"

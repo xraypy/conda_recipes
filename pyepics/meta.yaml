@@ -1,4 +1,4 @@
-{% set version = "3.3.2" %}
+{% set version = "3.3.3" %}
 {% set name = "pyepics" %}
 
 package:
@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-   url: https://github.com/pyepics/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/pyepics/{{ name }}/archive/{{ version }}.tar.gz
 
 build:
   number: 0
