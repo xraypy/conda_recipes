@@ -12,6 +12,7 @@ source:
 
 build:
    number: 0
+   # script: python setup.py install # [win or osx or linux]
    script: pip install . # [win or osx or linux]
    binary_relocation: True
    string: py37_0 # [py37]
@@ -20,10 +21,10 @@ build:
 
 requirements:
     build:
-        - python
+        - python==3.6
         - six
         - cython
-        - numpy
+        - numpy>=1.12
         - scipy
         - h5py
         - matplotlib
