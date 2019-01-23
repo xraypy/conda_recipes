@@ -9,12 +9,10 @@ source:
    git_rev: {{ version }}
    git_url: https://github.com/xraypy/xraylarch.git
 
-###   url: https://github.com/xraypy/{{ name }}/archive/{{ version }}.tar.gz
-###   sha256: e3652b494e20c55d42520bcb09bf1a3c47a13d832b8c82d80eb954f3eac99468
-
 build:
   number: 0
   script: python setup.py install
+  binary_relocation: True
 
 requirements:
   build:
@@ -52,7 +50,8 @@ requirements:
     - psycopg2
     - psutil>=5.4.7
     - tomopy
-    # - silx # [py36] [osx or linux64]
+    - dioptas
+    - silx  # [py36] [osx or linux64]
     - fabio # [osx or linux64]
     - pyFAI # [osx or linux64]
     - pyshortcuts
