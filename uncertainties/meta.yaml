@@ -5,14 +5,17 @@ package:
 source:
     sha256: 91db922d54dff6094b4ea0d6e058f713a992cdf42e3ebaf73278e1893bfa2942
     url: https://pypi.io/packages/source/u/uncertainties/uncertainties-3.0.2.tar.gz
+
 build:
     script: python -m pip install --no-deps --ignore-installed .
+    noarch: python
+
 requirements:
     build:
         - pip
         - python
-        - setuptools 
-    
+        - setuptools
+
     run:
         - python
         - numpy

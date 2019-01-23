@@ -1,10 +1,15 @@
 package:
   name: peakutils
-  version: 1.1.0
+  version: 1.3.0
+
+source:
+    url: https://files.pythonhosted.org/packages/cf/07/7bd0f10c2f35884fdb04affdb3c137a955d68c3840da86c896f4dcc9b6ee/PeakUtils-1.3.0.tar.gz
+    sha256: ae3da09fb16ffd9dcedd7428d326008ab0f0e21cccf681e2a41e05ee10ac72f4
 
 build:
-  number: 0
-  script: pip install -U peakutils
+   number: 0
+   script: python setup.py install
+   noarch: python
 
 requirements:
   build:
@@ -13,15 +18,13 @@ requirements:
     - pip
     - requests
     - six >=0.10.0
-    - numpy >=1.8
+    - numpy >=1.10
     - scipy >=0.14
-    - matplotlib >=2.0
 
   run:
     - python
-    - numpy >=1.8
+    - numpy >=1.10
     - scipy >=0.14
-    - matplotlib >=2.0
 
 test:
   imports:
