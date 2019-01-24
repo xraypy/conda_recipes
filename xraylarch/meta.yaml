@@ -1,4 +1,4 @@
-{% set version = "0.9.41rc1" %}
+{% set version = "0.9.41rc2" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -39,11 +39,11 @@ requirements:
     - scikit-image
     - scikit-learn
     - psycopg2
-    - wxpython>=4.0.2
+    - wxpython>=4.0.3
     - wxutils>=0.2.3
     - pyepics>=3.3.3
     - peakutils>=1.3.0
-    - wxmplot>=0.9.32
+    - wxmplot>=0.9.33
     - lmfit>=0.9.12
     - asteval
     - uncertainties
@@ -86,7 +86,7 @@ requirements:
     - wxutils>=0.2.3
     - pyepics>=3.3.3
     - peakutils>=1.3.0
-    - wxmplot>=0.9.32
+    - wxmplot>=0.9.33
     - lmfit>=0.9.12
     - asteval
     - uncertainties
