@@ -20,7 +20,7 @@ requirements:
         - pyqt
         - pyqtgraph
         - qtpy
-        - libgfortran
+        - libgfortran # [osx or linux]
         - lmfit
         - fabio
         - pyfai
