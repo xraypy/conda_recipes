@@ -1,10 +1,10 @@
 
 package:
     name: dioptas
-    version: 0.4.1
+    version: 0.4.2gse
 source:
     git_rev: develop
-    git_url: https://github.com/Dioptas/Dioptas
+    git_url: https://github.com/newville/Dioptas
 
 build:
     number: 1
@@ -12,12 +12,14 @@ build:
 
 requirements:
     build:
-        - python
+        - python=3.6.*
         - setuptools
+        - pip
         - numpy
         - scipy
         - pyqt
         - pyqtgraph
+        - qtpy
         - libgfortran
         - lmfit
         - fabio
@@ -25,22 +27,24 @@ requirements:
         - pycifrw
         - future
         - scikit-image
-        - qtpy
+        - pyshortcuts
 
     run:
-        - python
+        - python=3.6.*
         - setuptools
+        - pip
         - numpy
         - scipy
         - pyqt
         - pyqtgraph
+        - qtpy
         - lmfit
         - fabio
         - pyfai
         - pycifrw
         - future
         - scikit-image
-        - qtpy
+        - pyshortcuts
 
 test:
     imports:
