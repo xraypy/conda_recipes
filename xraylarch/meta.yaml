@@ -43,17 +43,17 @@ requirements:
     - wxutils>=0.2.3
     - pyepics>=3.3.3
     - peakutils>=1.3.0
-    - wxmplot>=0.9.33
+    - wxmplot>=0.9.34
     - lmfit>=0.9.12
     - asteval
     - uncertainties
-    - pycifrw>=4.3
+    - pycifrw>=4.2
     - psutil>=5.4.7
-    - tomopy
+    - tomopy>=1.3.0
     - dioptas
-    - silx
-    - fabio
-    - pyFAI
+    - silx  # [osx or linux64]
+    - fabio  # [osx or linux64]
+    - pyFAI  # [osx or linux64]
     - pyshortcuts
     - pypubsub
 
@@ -86,17 +86,17 @@ requirements:
     - wxutils>=0.2.3
     - pyepics>=3.3.3
     - peakutils>=1.3.0
-    - wxmplot>=0.9.33
+    - wxmplot>=0.9.34
     - lmfit>=0.9.12
     - asteval
     - uncertainties
-    - pycifrw>=4.3
+    - pycifrw>=4.2
     - psutil>=5.4.7
-    - tomopy
+    - tomopy>=1.3.0
     - dioptas
-    - silx
-    - fabio
-    - pyFAI
+    - silx  # [osx or linux64]
+    - fabio # [osx or linux64]
+    - pyFAI # [osx or linux64]
     - pyshortcuts
     - pypubsub
 
