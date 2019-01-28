@@ -17,13 +17,11 @@ requirements:
     - python
     - setuptools
     - wxpython>=4.0.3
-    - python.app # [osx]
 
   run:
     - python
     - setuptools
     - wxpython>=4.0.3
-    - python.app # [osx]
 
 test:
   imports:
