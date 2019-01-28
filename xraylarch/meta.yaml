@@ -15,7 +15,7 @@ build:
 
 requirements:
   build:
-    - python==3.6.*
+    - python
     - setuptools
     - pip
     - six>=1.10
@@ -47,13 +47,7 @@ requirements:
     - lmfit>=0.9.12
     - asteval
     - uncertainties
-    - pycifrw>=4.2
     - psutil>=5.4.7
-    - tomopy>=1.3.0
-    - dioptas
-    - silx  # [osx or linux64]
-    - fabio  # [osx or linux64]
-    - pyFAI  # [osx or linux64]
     - pyshortcuts
     - pypubsub
 
@@ -90,13 +84,7 @@ requirements:
     - lmfit>=0.9.12
     - asteval
     - uncertainties
-    - pycifrw>=4.2
     - psutil>=5.4.7
-    - tomopy>=1.3.0
-    - dioptas
-    - silx  # [osx or linux64]
-    - fabio # [osx or linux64]
-    - pyFAI # [osx or linux64]
     - pyshortcuts
     - pypubsub
 
