@@ -26,7 +26,6 @@ requirements:
     - matplotlib>=3.0
     - sqlalchemy>=1.2
     - h5py
-    - hdf5
     - requests
     - termcolor>=1.1.0
     - fontconfig # [osx or linux64]
@@ -34,8 +33,8 @@ requirements:
     - pcre
     - pywin32 # [win64 or win32]
     - yaml
-    - pyyaml>=3.12
-    - pillow>=5.3
+    - pyyaml
+    - pillow
     - scikit-image
     - scikit-learn
     - psycopg2
@@ -47,12 +46,11 @@ requirements:
     - lmfit>=0.9.12
     - asteval
     - uncertainties
-    - psutil>=5.4.7
+    - psutil
     - pyshortcuts
-    - pypubsub
 
   run:
-    - python==3.6.*
+    - python
     - setuptools
     - pip
     - six>=1.10
@@ -63,7 +61,6 @@ requirements:
     - matplotlib>=3.0
     - sqlalchemy>=1.2
     - h5py
-    - hdf5
     - requests
     - termcolor>=1.1.0
     - fontconfig # [osx or linux64]
@@ -71,12 +68,12 @@ requirements:
     - pcre
     - pywin32 # [win64 or win32]
     - yaml
-    - pyyaml>=3.12
-    - pillow>=5.3
+    - pyyaml
+    - pillow
     - scikit-image
     - scikit-learn
     - psycopg2
-    - wxpython>=4.0.2
+    - wxpython>=4.0.3
     - wxutils>=0.2.3
     - pyepics>=3.3.3
     - peakutils>=1.3.0
@@ -84,9 +81,8 @@ requirements:
     - lmfit>=0.9.12
     - asteval
     - uncertainties
-    - psutil>=5.4.7
+    - psutil
     - pyshortcuts
-    - pypubsub
 
 test:
   imports:
