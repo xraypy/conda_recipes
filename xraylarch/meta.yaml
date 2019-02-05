@@ -1,4 +1,4 @@
-{% set version = "0.9.41rc2" %}
+{% set version = "0.9.41" %}
 {% set name = "xraylarch" %}
 
 package:
