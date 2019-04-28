@@ -25,6 +25,7 @@ requirements:
     - h5py
     - scikit-image
     - pywavelets
+    - tifffile
     - numexpr
     - mkl
     - mkl-devel
@@ -39,11 +40,11 @@ requirements:
     - six
     - scikit-image
     - pywavelets
+    - tifffile
     - mkl
     - mkl-devel
     - mkl-include
     - mkl_fft
-    - dxchange
     - numexpr
     - futures # [py2k]
     - MinGW # [win]
