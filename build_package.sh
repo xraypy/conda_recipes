@@ -13,7 +13,9 @@ conda build $PACKAGE
 cp $ROOT/conda-bld/$PLAT/$PACKAGE* dist/$PLAT/.
 
 
-conda convert -f --platform all $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
+conda convert -f -p win-64  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
+conda convert -f -p linux-64  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
+conda convert -f -p linux-armv7l  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
 
 
 echo "# Now do"
