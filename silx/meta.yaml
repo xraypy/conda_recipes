@@ -1,6 +1,6 @@
 package:
     name: silx
-    version: 0.9.0
+    version: 0.10.1
 
 source:
     git_rev: master
