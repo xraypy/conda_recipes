@@ -12,7 +12,7 @@ build:
 
 requirements:
     build:
-        - python=3.6.*
+        - python
         - setuptools
         - pip
         - numpy
@@ -30,7 +30,7 @@ requirements:
         - pyshortcuts
 
     run:
-        - python=3.6.*
+        - python
         - setuptools
         - pip
         - numpy
