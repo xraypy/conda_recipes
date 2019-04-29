@@ -1,4 +1,4 @@
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
     name: pyfai
@@ -6,7 +6,7 @@ package:
 
 
 source:
-  git_rev: v0.17.0
+  git_rev: v0.17.1
   git_url: https://github.com/silx-kit/pyFAI
 
 
@@ -21,7 +21,7 @@ build:
 
 requirements:
     build:
-        - python==3.6
+        - python
         - six
         - cython
         - numpy>=1.12
