@@ -1,4 +1,4 @@
-{% set version = "0.9.42" %}
+{% set version = "0.9.43rc1" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -43,11 +43,16 @@ requirements:
     - pyepics>=3.3.3
     - peakutils>=1.3.0
     - wxmplot>=0.9.34
-    - lmfit>=0.9.12
+    - lmfit>=0.9.13
     - asteval
     - uncertainties
     - psutil
     - pyshortcuts
+    - pyfai
+    - fabio
+    - silx
+    - dioptas
+    - tomopy
 
   run:
     - python
@@ -78,11 +83,16 @@ requirements:
     - pyepics>=3.3.3
     - peakutils>=1.3.0
     - wxmplot>=0.9.34
-    - lmfit>=0.9.12
+    - lmfit>=0.9.13
     - asteval
     - uncertainties
     - psutil
     - pyshortcuts
+    - pyfai
+    - fabio
+    - silx
+    - dioptas
+    - tomopy
 
 test:
   imports:
