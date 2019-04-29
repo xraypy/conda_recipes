@@ -1,0 +1,27 @@
+package:
+    name: tifffile
+    version: 2019.3.18
+source:
+    url: https://pypi.io/packages/source/t/tifffile/tifffile-2019.3.18.tar.gz
+
+build:
+    script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+    build:
+        - pip
+        - python
+        - setuptools
+
+    run:
+        - python
+        - numpy
+test:
+    imports:
+        - tifffile
+    requires:
+        - numpy
+about:
+    home: https://pypi.python.org/pypi/uncertainties
+    license: BSD 3-Clause
+    summary: Read TIFF files
