@@ -1,0 +1,33 @@
+{% set version = "2.4.0" %}
+
+package:
+  name: pyparsing
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/p/pyparsing/pyparsing-2.4.0.tar.gz
+
+build:
+  number: 0
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+    - six >=0.10.0
+
+  run:
+    - python
+    - setuptools
+    - pip
+
+test:
+  imports:
+    - pyparsing
+
+about:
+  home: https://github.com/pyparsing/pyparsing/
+  license: MIT
+  summary: 'Python parsing module'
