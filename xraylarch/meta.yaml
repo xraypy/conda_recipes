@@ -1,4 +1,4 @@
-{% set version = "0.9.43rc1" %}
+{% set version = "0.9.43" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -15,7 +15,7 @@ build:
 
 requirements:
   build:
-    - python
+    - python>=3.7.2
     - setuptools
     - pip
     - six>=1.10
