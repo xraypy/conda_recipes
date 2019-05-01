@@ -1,11 +1,11 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: dask
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/dask/dask-1.2.0.tar.gz
+  url: https://pypi.io/packages/source/d/dask/dask-1.2.1.tar.gz
 
 build:
   number: 0
