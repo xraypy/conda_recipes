@@ -1,0 +1,59 @@
+{% set version = "1.2.0" %}
+
+package:
+  name: dask
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/d/dask/dask-1.2.0.tar.gz
+
+build:
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+preserve_egg_dir: True
+
+requirements:
+  build:
+    - ca-certificates
+    - openssl
+    - python
+    - readline
+    - sqlite
+    - tk
+    - zlib
+    - python
+    - setuptools
+    - pip
+    - six >=0.10.0
+    - cloudpickle
+    - pandas
+    - toolz
+    - distributed
+    - partd
+
+  run:
+    - python
+    - bokeh
+    - cloudpickle
+    - cytoolz
+    - dask-core
+    - distributed
+    - numpy
+    - pandas
+    - partd
+    - python
+    - toolz
+    - setuptools
+    - pip
+    - six
+
+
+test:
+  imports:
+    - dask
+
+about:
+  home: https://dask.org
+  license: BSD
+  summary: 'Parallel PyData with Task Scheduling'
