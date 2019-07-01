@@ -15,14 +15,13 @@ build:
 
 requirements:
   build:
-    - python>=3.7.2
+    - python>=3.7
     - setuptools
     - pip
-    - six>=1.10
     - nose
     - pytest
     - numpy>=1.15
-    - scipy>=1.0
+    - scipy>=1.2
     - matplotlib>=3.0
     - sqlalchemy>=1.2
     - h5py
@@ -55,14 +54,13 @@ requirements:
     - tomopy
 
   run:
-    - python
+    - python>=3.7
     - setuptools
     - pip
-    - six>=1.10
     - nose
     - pytest
     - numpy>=1.15
-    - scipy>=1.0
+    - scipy>=1.2
     - matplotlib>=3.0
     - sqlalchemy>=1.2
     - h5py
