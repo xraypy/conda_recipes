@@ -1,4 +1,4 @@
-{% set version = "0.9.14" %}
+{% set version = "0.9.15" %}
 
 package:
   name: asteval
@@ -17,12 +17,10 @@ requirements:
     - python
     - setuptools
     - numpy>=1.12
-    - six
 
   run:
     - python
     - numpy>=1.12
-    - six
 
 test:
   # Python imports

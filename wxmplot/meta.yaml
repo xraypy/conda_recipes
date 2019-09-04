@@ -1,4 +1,4 @@
-{% set version = "0.9.36" %}
+{% set version = "0.9.38" %}
 
 package:
   name: wxmplot
@@ -17,18 +17,23 @@ requirements:
     - python
     - setuptools
     - six
-    - numpy
+    - numpy>=1.13
     - matplotlib>=3.0
-    - wxpython>=4.0.3
+    - wxpython>=4.0.4
+    - pytest
+    - pillow
+    - cycler
 
   run:
     - python
     - setuptools
     - six
-    - numpy
+    - numpy>=1.13
     - matplotlib>=3.0
-    - wxpython>=4.0.3
-
+    - wxpython>=4.0.4
+    - pytest
+    - pillow
+    - cycler
 
 test:
   imports:
