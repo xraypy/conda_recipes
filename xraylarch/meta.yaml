@@ -20,40 +20,39 @@ requirements:
     - pip
     - nose
     - pytest
-    - numpy>=1.12
+    - sphinx
+    - requests
+    - psutil
+    - silx>=0.11
+    - termcolor>=1.1.0
+    - yaml
+    - pyyaml
     - scipy>=1.2
+    - numpy>=1.12
     - matplotlib>=3.0
     - sqlalchemy>=0.9
     - h5py>=2.8
-    - requests
-    - termcolor>=1.1.0
-    - fontconfig # [osx or linux64]
-    - pango # [linux64]
-    - pcre
-    - pywin32 # [win64 or win32]
-    - yaml
-    - pyyaml
     - pillow
+    - peakutils
     - scikit-image
     - scikit-learn
+    - asteval
+    - lmfit>=0.9.13
+    - uncertainties>=3.0
+    - pyshortcuts>=1.4
+    - pyepics>=3.3.3
     - wxpython>=4.0.3
     - wxutils>=0.2.3
-    - peakutils
-    - wxmplot>=0.9.38
-    - lmfit>=0.9.13
-    - asteval
-    - uncertainties
-    - psutil
-    - pyshortcuts
-    - pyfai
+    - wxmplot>=0.9.37
     - fabio
-    - silx
+    - pyfai
+    - pycifrw
     - dioptas
     - tomopy
     - psycopg2
-    - pycifrw
-    - pyepics
-
+    - fontconfig # [osx or linux64]
+    - pango # [linux64]
+    - pywin32 # [win64 or win32]
 
   run:
     - python>=3.7
@@ -61,39 +60,40 @@ requirements:
     - pip
     - nose
     - pytest
-    - numpy>=1.12
-    - scipy>=1.2
-    - matplotlib>=3.0
-    - sqlalchemy>=0.9
-    - h5py
+    - sphinx
     - requests
+    - psutil
+    - silx>=0.11
     - termcolor>=1.1.0
-    - fontconfig # [osx or linux64]
-    - pango # [linux64]
-    - pcre
-    - pywin32 # [win64 or win32]
     - yaml
     - pyyaml
+    - scipy>=1.2
+    - numpy>=1.12
+    - matplotlib>=3.0
+    - sqlalchemy>=0.9
+    - h5py>=2.8
     - pillow
+    - peakutils
     - scikit-image
     - scikit-learn
-    - wxpython>=4.0.4
-    - wxutils>=0.2.3
-    - peakutils>=1.3.0
-    - wxmplot>=0.9.38
-    - lmfit>=0.9.13
     - asteval
-    - uncertainties
-    - psutil
-    - pyshortcuts
-    - pyfai
+    - lmfit>=0.9.13
+    - uncertainties>=3.0
+    - pyshortcuts>=1.4
+    - pyepics>=3.3.3
+    - wxpython>=4.0.3
+    - wxutils>=0.2.3
+    - wxmplot>=0.9.37
     - fabio
-    - silx
+    - pyfai
+    - pycifrw
     - dioptas
     - tomopy
     - psycopg2
-    - pycifrw
-    - pyepics
+    - fontconfig # [osx or linux64]
+    - pango # [linux64]
+    - pywin32 # [win64 or win32]
+
 
 test:
   imports:
