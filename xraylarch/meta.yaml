@@ -86,7 +86,7 @@ requirements:
     - pyfai
     - pycifrw
     - dioptas
-    - tomopy
+    - tomopy # [osx or linux64]
     - psycopg2
     - fontconfig # [osx or linux64]
     - pango # [linux64]
