@@ -1,4 +1,4 @@
-{% set version = "0.9.15" %}
+{% set version = "0.9.17" %}
 
 package:
   name: asteval
