@@ -34,24 +34,14 @@ requirements:
     - peakutils
     - scikit-image
     - scikit-learn
-    - asteval
     - lmfit>=1.0.0
-    - uncertainties>=3.0
-    - pyshortcuts>=1.4
-    - pyepics>=3.4.1
+    - uncertainties>=3.1
+    - pyshortcuts>=1.7
     - wxpython>=4.0.3
     - wxutils>=0.2.3
     - wxmplot>=0.9.40
-    - xraydb>=4.2
-    - silx>=0.11
-    - fabio
-    - pyfai
-    - pycifrw
-    - dioptas
-    - tomopy
-    - psycopg2
+    - xraydb>=4.3
     - fontconfig # [osx or linux64]
-    - pango # [linux64]
     - pywin32 # [win64 or win32]
 
   run:
@@ -74,24 +64,14 @@ requirements:
     - peakutils
     - scikit-image
     - scikit-learn
-    - asteval
     - lmfit>=1.0.0
-    - uncertainties>=3.0
-    - pyshortcuts>=1.4
-    - pyepics>=3.4.1
+    - uncertainties>=3.1
+    - pyshortcuts>=1.7
     - wxpython>=4.0.3
     - wxutils>=0.2.3
     - wxmplot>=0.9.40
-    - xraydb>=4.2
-    - silx>=0.11
-    - fabio
-    - pyfai
-    - pycifrw
-    - dioptas
-    - tomopy # [osx or linux64]
-    - psycopg2
+    - xraydb>=4.3
     - fontconfig # [osx or linux64]
-    - pango # [linux64]
     - pywin32 # [win64 or win32]
 
 
