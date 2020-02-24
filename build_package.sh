@@ -13,10 +13,11 @@ conda build $PACKAGE
 cp $ROOT/conda-bld/$PLAT/$PACKAGE* dist/$PLAT/.
 
 
-conda convert -f -p win-64  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
-conda convert -f -p linux-64  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
-conda convert -f -p linux-armv7l  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
-
+for TARG in win-64 osx-64 linux-64 linux-armv7l ; do
+    if [ $PLAT != $TARG ]  ; then
+        conda convert -f -p $TARG  $ROOT/conda-bld/$PLAT/$PACKAGE* -o dist
+    fi
+done
 
 echo "# Now do"
 echo '# '    anaconda upload -u gsecars dist/\*/$PACKAGE\*
