@@ -1,4 +1,4 @@
-{% set version = "0.9.46" %}
+{% set version = "0.9.47" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -35,13 +35,14 @@ requirements:
     - scikit-image
     - scikit-learn
     - asteval
-    - lmfit>=0.9.13
+    - lmfit>=1.0.0
     - uncertainties>=3.0
     - pyshortcuts>=1.4
-    - pyepics>=3.3.3
+    - pyepics>=3.4.1
     - wxpython>=4.0.3
     - wxutils>=0.2.3
-    - wxmplot>=0.9.37
+    - wxmplot>=0.9.40
+    - xraydb>=4.2
     - silx>=0.11
     - fabio
     - pyfai
@@ -61,7 +62,6 @@ requirements:
     - pytest
     - requests
     - psutil
-    - silx>=0.11
     - termcolor>=1.1.0
     - yaml
     - pyyaml
@@ -75,13 +75,15 @@ requirements:
     - scikit-image
     - scikit-learn
     - asteval
-    - lmfit>=0.9.13
+    - lmfit>=1.0.0
     - uncertainties>=3.0
     - pyshortcuts>=1.4
-    - pyepics>=3.3.3
+    - pyepics>=3.4.1
     - wxpython>=4.0.3
     - wxutils>=0.2.3
-    - wxmplot>=0.9.37
+    - wxmplot>=0.9.40
+    - xraydb>=4.2
+    - silx>=0.11
     - fabio
     - pyfai
     - pycifrw
