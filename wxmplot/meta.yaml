@@ -1,4 +1,4 @@
-{% set version = "0.9.40" %}
+{% set version = "0.9.41" %}
 
 package:
   name: wxmplot
