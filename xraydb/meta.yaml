@@ -1,4 +1,4 @@
-{% set version = "4.3.2" %}
+{% set version = "4.4" %}
 
 package:
   name: xraydb
