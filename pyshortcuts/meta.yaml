@@ -1,4 +1,4 @@
-{% set version = "1.7" %}
+{% set version = "1.7.2" %}
 
 package:
   name: pyshortcuts
@@ -17,7 +17,6 @@ requirements:
     - python
     - setuptools
     - pytest
-    - six
     - pywin32 # [win32 or win64]
     - python.app # [osx]
 
@@ -26,10 +25,8 @@ requirements:
     - python
     - setuptools
     - pytest
-    - six
     - pywin32 # [win32 or win64]
     - python.app # [osx]
-    - wxpython
 
 test:
   imports:
