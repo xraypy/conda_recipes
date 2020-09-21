@@ -19,7 +19,7 @@ requirements:
     - numpy>=1.16
     - scipy>=1.2
     - uncertainties>=3.1
-    - asteval>=0.9.16
+    - asteval>=0.9.18
 
   run:
     - python
@@ -27,7 +27,7 @@ requirements:
     - numpy>=1.16
     - scipy>=1.2
     - uncertainties>=3.1
-    - asteval>=0.9.16
+    - asteval>=0.9.18
 
 test:
   # Python imports
