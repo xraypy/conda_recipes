@@ -1,29 +1,31 @@
+{% set version = "3.1.4" %}
 
 package:
     name: uncertainties
-    version: 3.1.2
+    version: {{ version }}
+
 source:
-    url: https://pypi.io/packages/source/u/uncertainties/uncertainties-3.1.2.tar.gz
+  git_url: https://github.com/newville/uncertainties.git
 
 build:
-    script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: python setup.py install
 
 requirements:
     build:
-        - pip
         - python
         - setuptools
-        - numpy>=1.13
+        - pip
+        - numpy>=1.16
 
     run:
         - python
-        - numpy>=1.13
+        - numpy>=1.16
 test:
     imports:
         - uncertainties
         - uncertainties.unumpy
-    requires:
-        - numpy
+
 about:
     home: https://pypi.python.org/pypi/uncertainties
     license: BSD 3-Clause
