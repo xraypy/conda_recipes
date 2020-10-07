@@ -20,4 +20,6 @@ for TARG in win-64 osx-64 linux-64 linux-armv7l ; do
 done
 
 echo "# Now do"
-echo '# '    anaconda upload -u gsecars dist/\*/$PACKAGE\*
+echo '# '    anaconda upload --skip -u gsecars dist/\*/$PACKAGE\*
+
+
