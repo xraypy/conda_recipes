@@ -16,12 +16,12 @@ requirements:
   build:
     - python
     - setuptools
-    - wxpython>=4.0.3
+    - wxpython>=4.0.5
 
   run:
     - python
     - setuptools
-    - wxpython>=4.0.3
+    - wxpython>=4.0.5
 
 test:
   imports:
