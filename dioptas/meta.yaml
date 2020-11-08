@@ -1,10 +1,10 @@
 
 package:
     name: dioptas
-    version: 0.4.2gse
+    version: 0.5.1
 source:
     git_rev: develop
-    git_url: https://github.com/newville/Dioptas
+    git_url: https://github.com/Dioptas/Dioptas
 
 build:
     number: 1
@@ -25,9 +25,13 @@ requirements:
         - fabio
         - pyfai
         - pycifrw
-        - future
         - scikit-image
+        - pandas
+        - h5py
+        - mock
         - pyshortcuts
+        - future
+        - python-dateutil
 
     run:
         - python
@@ -45,6 +49,11 @@ requirements:
         - future
         - scikit-image
         - pyshortcuts
+        - pandas
+        - python-dateutil
+        - h5py
+        - mock
+
 
 test:
     imports:
