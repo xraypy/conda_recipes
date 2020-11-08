@@ -1,4 +1,4 @@
-{% set version = "0.9.47" %}
+{% set version = "0.9.49" %}
 {% set name = "xraylarch" %}
 
 package:
@@ -15,8 +15,7 @@ build:
 
 requirements:
   build:
-    - python>=3.7
-    - setuptools
+    - python>=3.8
     - pip
     - nose
     - pytest
@@ -25,28 +24,38 @@ requirements:
     - termcolor>=1.1.0
     - yaml
     - pyyaml
-    - scipy>=1.2
-    - numpy>=1.12
+    - scipy>=1.3
+    - numpy>=1.16
     - matplotlib>=3.0
-    - sqlalchemy>=0.9
+    - sqlalchemy>=1.0
     - h5py>=2.8
+    - silx>=0.12
     - pillow
     - peakutils
     - scikit-image
     - scikit-learn
-    - lmfit>=1.0.0
+    - lmfit>=1.0.1
+    - asteval>=0.9.19
     - uncertainties>=3.1
     - pyshortcuts>=1.7
-    - wxpython>=4.0.3
+    - wxpython>=4.0.4
     - wxutils>=0.2.3
-    - wxmplot>=0.9.40
-    - xraydb>=4.3
-    - fontconfig # [osx or linux64]
+    - wxmplot>=0.9.43
+    - xraydb>=4.4
     - pywin32 # [win64 or win32]
+    - certifi
+    - fabio
+    - future
+    - joblib
+    - pywavelets
+    - tifffile
+    - imageio
+    - networkx
+    - idna
+    - urllib3
 
   run:
-    - python>=3.7
-    - setuptools
+    - python>=3.8
     - pip
     - nose
     - pytest
@@ -55,24 +64,36 @@ requirements:
     - termcolor>=1.1.0
     - yaml
     - pyyaml
-    - scipy>=1.2
-    - numpy>=1.12
+    - scipy>=1.3
+    - numpy>=1.16
     - matplotlib>=3.0
-    - sqlalchemy>=0.9
+    - sqlalchemy>=1.0
     - h5py>=2.8
+    - silx>=0.12
     - pillow
     - peakutils
     - scikit-image
     - scikit-learn
-    - lmfit>=1.0.0
+    - lmfit>=1.0.1
+    - asteval>=0.9.19
     - uncertainties>=3.1
     - pyshortcuts>=1.7
-    - wxpython>=4.0.3
+    - wxpython>=4.0.4
     - wxutils>=0.2.3
-    - wxmplot>=0.9.40
-    - xraydb>=4.3
-    - fontconfig # [osx or linux64]
+    - wxmplot>=0.9.43
+    - xraydb>=4.4
     - pywin32 # [win64 or win32]
+    - certifi
+    - fabio
+    - future
+    - joblib
+    - pywavelets
+    - tifffile
+    - imageio
+    - networkx
+    - idna
+    - urllib3
+    
 
 
 test:
